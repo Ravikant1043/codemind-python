@@ -1,14 +1,12 @@
+def facsum(n):
+    k=0
+    for i in range(1,n):
+        if n%i==0:
+            k+=i
+    return k
 a=int(input())
 b=int(input())
-d=0
-c=0
-for i in range(1,a):
-    if(a%i==0):
-        d+=i
-for i in range(1,b):
-    if(b%i==0):
-        c+=i
-if(d==b and c==a):
+if(b==facsum(a) and a==facsum(b)):
     print("Amicable")
 else:
     print("Not Amicable")
