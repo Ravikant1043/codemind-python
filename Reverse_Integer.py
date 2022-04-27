@@ -1,15 +1,12 @@
 n=int(input())
-s=0
-if n>=0:
-    while(n):
-        d=n%10
-        s=s*10+d
-        n=n//10
-    print(s)
-else:
+if(n<=0):
     n=(-n)
-    while(n):
-        d=n%10
-        s=s*10+d
-        n=n//10
-    print(-s)
+    n=str(n)
+    n=n[::-1]
+    n=int(n)
+    print(-n)
+else:
+    n=str(n)
+    n=n[::-1]
+    n=int(n)
+    print(n)
