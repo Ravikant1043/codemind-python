@@ -1,11 +1,12 @@
 n=int(input())
 i=0
+c=0
 while(1):
-    c=i*(i+1)
-    if(c>n):
-        print("NO")
-        break
-    elif(c==n):
+    if(c==n):
         print("YES")
         break
+    elif(c>n):
+        print("NO")
+        break
+    c=i*(i+1)    
     i+=1
