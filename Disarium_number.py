@@ -1,14 +1,10 @@
-import math as m
 n=int(input())
-t=n
 d=0
-k=m.ceil(m.log10(n))
-while(t):
-    i=t%10
-    d+=i**k
-    t=t//10
-    k-=1
-if d==n:
+a=n
+for i in range(len(str(n)),0,-1):
+    d+=(n%10)**i
+    n=n//10
+if d==a:
     print("True")
 else:
     print("False")
