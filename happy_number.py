@@ -1,17 +1,15 @@
 def happy(n):
-    if n==1 or n==7:
+    if (n==1 or n==7):
         print("True")
         return 
-    if n==4:
+    elif n==4:
         print("False")
         return 
-    n=str(n)
     d=0
-    for i in n:
-        d+=int(i)**2
-    n=int(n)
-    happy(d)
-    return d
-    
+    while(n):
+        d+=(n%10)**2
+        n=n//10
+    n=d
+    happy(n)
 n=int(input())
 happy(n)
