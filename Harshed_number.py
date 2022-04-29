@@ -1,12 +1,10 @@
 n=int(input())
-t=n
+a=n
 d=0
-while(t):
-    i=t%10
-    d+=i
-    t=t//10
-    
-if(n%d==0):
+while(n):
+    d+=n%10
+    n=n//10
+if a%d==0:
     print("True")
 else:
     print("False")
