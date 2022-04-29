@@ -7,7 +7,7 @@ def prime(n):
 a=int(input())
 b=int(input())
 if a==1:
-    a=a+1
-for i in range(a,b+1):
+    a+=1
+for i in range(a,b):
     if prime(i)==1:
         print(i)
