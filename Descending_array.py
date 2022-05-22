@@ -1,0 +1,9 @@
+n=int(input())
+a=list(map(int,input().split()))[:n]
+b=a.copy()
+b.sort()
+b=b[::-1]
+if(b==a):
+    print("yes")
+else:
+    print("no")
