@@ -4,7 +4,7 @@ for i in n:
     for j in n:
         if i==j:
             d+=1
-    if d==2:
+    if(d==2):
         print("Not Unique Number")
         break
 else:
