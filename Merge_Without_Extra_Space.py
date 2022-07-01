@@ -1,0 +1,9 @@
+t=int(input())
+while(t):
+    t-=1
+    a,b=map(int,input().split())
+    l=list(map(int,input().split()))[:a]
+    l2=list(map(int,input().split()))[:b]
+    l=l+l2
+    l.sort()
+    print(*l)
