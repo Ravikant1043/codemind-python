@@ -1,0 +1,11 @@
+n=int(input())
+l=list(map(int,input().split()))
+t=0
+s=0
+for i in range(n//2):
+    t+=l[i]
+    s+=l[n//2+i]
+if abs(t-s)%4==0:
+    print("X")
+else:
+    print("Y")
