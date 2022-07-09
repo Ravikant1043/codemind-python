@@ -1,0 +1,10 @@
+t=int(input())
+a=0
+while(t):
+    t-=1
+    b=input()
+    if b=='++X' or b=='X++':
+        a+=1
+    else:
+        a-=1
+print(a)
