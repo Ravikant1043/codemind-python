@@ -25,4 +25,3 @@ if (len(d)%2==0):
 elif (len(d)%2==1):
     d.append(0)
     print(*d)
-    
