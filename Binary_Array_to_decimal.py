@@ -1,0 +1,12 @@
+n=int(input())
+arr=list(map(str,input().split()))
+s="".join(arr)
+k=int(s)
+dn=0
+i=0
+while(k!=0):
+    d=k%10
+    dn=dn+d*pow(2,i)
+    k=k//10
+    i=i+1
+print(dn)    
